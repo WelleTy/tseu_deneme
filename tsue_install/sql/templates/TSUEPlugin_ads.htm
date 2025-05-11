@@ -1,0 +1,44 @@
+<div class="widget" id="advertisements">
+	<h4>
+		<img src="{$TSUE['TSUE_Settings']->settings['global_settings']['website_url']}/styles/{$TSUE['TSUE_Template']->ThemeName}/forums/mix/{$toggleSrc}.png" alt="" title="" rel="showAds" id="toggle" class="middle pointer" /> 
+		<span rel="adsTitle">{$adsTitle}</span>
+	</h4>
+	
+	<div id="showAds" class="{$class}">{$TSUEPlugin_ads_rows}</div>
+</div>
+
+<script type="text/javascript">
+	var totalAds = {$totalAds}, rotate, currentAd = 1, nextAd = 2;
+
+	function rotateAds()
+	{
+		if(nextAd > totalAds)
+		{
+			nextAd = 1;
+		}
+		
+		$('div[data-adNumber="'+currentAd+'"]').fadeOut("slow", function()
+		{
+			$('span[rel="adsTitle"]').html($('div[data-adNumber="'+nextAd+'"] .adsTitle').html());
+
+			$('div[data-adNumber="'+nextAd+'"]').fadeIn("slow", function()
+			{				
+				currentAd = nextAd;
+				nextAd++;
+			});
+		});
+	}
+
+	window.onload=function()
+	{
+		rotate = setInterval(function(){rotateAds()}, 5000);
+
+		$("#advertisements").mouseover(function()
+		{
+			clearInterval(rotate);
+		}).mouseout(function()
+		{
+			rotate = setInterval(function(){rotateAds()}, 5000);
+		});
+	};
+</script>

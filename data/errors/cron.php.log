@@ -1,0 +1,7 @@
+
+------------------------------------------
+02-06-2019 13:20:46
+[8] Undefined index: skipDownloadedTorrentsBefore
+PHP Error on line 27 in file C:\xampp\htdocs\library\cron\hitrun.php
+5.6.40 WINNT
+------------------------------------------

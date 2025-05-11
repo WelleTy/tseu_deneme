@@ -1,0 +1,18 @@
+<tr class="threadList" id="thread_{$thread['threadid']}">
+	<td align="center" class="threadListAvatar">{$clickable_member_avatar}</td>
+	<td>
+		<div id="icons">
+			<span class="{$sticky}" title="{$TSUE['TSUE_Language']->phrase['forums_icon_sticky']}"></span>
+			<span class="{$locked}" title="{$TSUE['TSUE_Language']->phrase['forums_icon_locked']}"></span>
+			<span class="{$poll}" title="{$TSUE['TSUE_Language']->phrase['poll']}"></span>
+		</div>
+		{$checkboxes}
+		{$thread_prefix}
+		<a href="{$TSUE['TSUE_Settings']->settings['global_settings']['website_url']}/?p=forums&amp;pid=11&amp;fid={$forum['forumid']}&amp;tid={$thread['threadid']}" threadid="{$thread['threadid']}" forumid="{$thread['forumid']}" rel="{$threadREL}" title="{$threadLinkTitle}">{$thread['title']}</a> 
+		{$multiPages}
+		<div class="small">{$thread_owner}, {$post_date}</div>
+	</td>
+	<td>{$thread['reply_count']}</td>
+	<td>{$thread['view_count']}</td>
+	<td>{$last_post_info}</td>
+</tr>

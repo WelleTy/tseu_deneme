@@ -1,0 +1,13 @@
+
+------------------------------------------
+28-12-2017 22:41:11
+[8] Undefined index: tsue_member
+PHP Error on line 12 in file /var/www/virtual/demotracker.ml/htdocs/library/classes/class_member.php
+5.3.10-1ubuntu3.26 Linux
+------------------------------------------
+------------------------------------------
+02-06-2019 12:40:55
+[8] Undefined index: tsue_member
+PHP Error on line 12 in file C:\xampp\htdocs\library\classes\class_member.php
+5.6.40 WINNT
+------------------------------------------

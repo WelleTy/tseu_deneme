@@ -1,0 +1,16 @@
+<div class="widget">
+	<h4>
+		<img src="{$TSUE['TSUE_Settings']->settings['global_settings']['website_url']}/styles/{$TSUE['TSUE_Template']->ThemeName}/forums/mix/{$toggleSrc}.png" alt="" title="" rel="findMember" id="toggle" class="middle pointer" /> {$TSUE['TSUE_Language']->phrase['find_member']}
+	</h4>
+	<div id="findMember" class="{$class}">
+		<form id="findMember_form" method="post" action="{$TSUE['TSUE_Settings']->settings['global_settings']['website_url']}/?p=members&pid=13">
+		<input type="hidden" name="do" value="search" />
+			<p>
+				<label for="membername">{$TSUE['TSUE_Language']->phrase['your_name']}</label>
+				<input type="text" name="membername" id="membername" class="s" accesskey="m" value="" /> 
+				<input type="submit" value="{$TSUE['TSUE_Language']->phrase['button_search']}" class="submit" /> 
+				<input type="reset" value="{$TSUE['TSUE_Language']->phrase['button_reset']}" class="submit" /> 
+			</p>
+		</form>
+	</div>
+</div>

@@ -1,0 +1,25 @@
+<script type="text/javascript" src="{$TSUE['TSUE_Settings']->settings['global_settings']['website_url']}/js/radio/swfobject.js"></script>
+
+<div class="widget">
+	<h4>
+		<img src="{$TSUE['TSUE_Settings']->settings['global_settings']['website_url']}/styles/{$TSUE['TSUE_Template']->ThemeName}/forums/mix/{$toggleSrc}.png" alt="" title="" rel="TSUERadio" id="toggle" class="middle pointer" /> 
+		{$radioOptions['radio_swfradiochannel']}
+	</h4>
+	<p id="TSUERadio" class="{$class}">		
+		<strong>Sorry this site have a flash based native radio and needed adobe flash 10+ support. </strong><br />
+		<a href="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash">Download Flash here.</a>
+	</p>
+</div>
+
+<script type="text/javascript">
+// <![CDATA[	
+	var so = new SWFObject("{$TSUE['TSUE_Settings']->settings['global_settings']['website_url']}/js/radio/tsueRadio.swf", "tsueRadio", "{$radioOptions['radio_width']}", "{$radioOptions['radio_height']}", "{$radioOptions['radio_version']}", "{$radioOptions['radio_bg']}");
+	so.addVariable("swfcolor", "{$radioOptions['radio_swfcolor']}");
+	so.addVariable("swfwidth", "{$radioOptions['radio_width']}");
+	so.addVariable("swfradiochannel", "{$radioOptions['radio_swfradiochannel']}");
+	so.addVariable("swfstreamurl", "{$radioOptions['radio_swfstreamurl']}");
+	so.addVariable("swfinformations", "{$radioOptions['radio_swfinformations']}");
+	so.addVariable("swfpause", "1");
+	so.write("TSUERadio");	
+// ]]>
+</script>

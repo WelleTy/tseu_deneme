@@ -1,0 +1,24 @@
+<div class="widget2">
+	<h4>
+		{$shoutboxChannels}
+		<div id="shoutboxUpdating">{$TSUE['TSUE_Language']->phrase['updating']}</div>
+		<img src="{$TSUE['TSUE_Settings']->settings['global_settings']['website_url']}/styles/{$TSUE['TSUE_Template']->ThemeName}/forums/mix/{$toggleSrc}.png" alt="" title="" rel="recentShoutbox" id="toggle" class="middle pointer" /> {$TSUE['TSUE_Language']->phrase['shoutbox_title']} 
+	</h4>
+	<div id="recentShoutbox" class="{$class}">
+		{$shoutboxNotifications}
+
+		<div id="shoutbox_list">
+			<div class="shoutbox">
+				<table cellpadding="0" cellspacing="0" border="0" class="shoutbox">
+					{$ShoutBOXRows}
+				</table>
+			</div>
+		</div>
+
+		{$shoutbox_post_shout}
+	</div>
+</div>
+
+<script type="text/javascript">
+	var refreshINseconds = {$refresh_in_seconds}, maxLoadLimit = {$max_load_limit}, lastSID = {$lastSID};
+</script>

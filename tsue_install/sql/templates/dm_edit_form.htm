@@ -1,0 +1,73 @@
+{$Errors}
+
+<form id="dm_edit_form" method="post" action="" enctype="multipart/form-data">
+<input type="hidden" name="action" value="edit" id="action" />
+<input type="hidden" name="did" value="{$did}" id="did" />
+<input type="hidden" name="securitytoken" value="{$TSUE['TSUE_Member']->info['csrf_token_page']}" />
+
+<div class="tableHeader">
+	<div class="row">
+		<div class="cell first">
+			{$Page_Title}
+		</div>
+	</div>
+</div>
+
+<div class="table">
+	
+	<div class="row">
+		<div class="cell first"><label for="file_title">{$TSUE['TSUE_Language']->phrase['file_title']}</label></div>
+		<div class="cell second">
+			<input type="text" name="File[title]" id="file_title" class="s" accesskey="t" value="{$File['title']}" />
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="cell first"><label for="tinymce_autoload">{$TSUE['TSUE_Language']->phrase['file_description']}</label></div>
+		<div class="cell second">
+			<textarea name="File[description]" id="tinymce_autoload" class="tinymce">{$File['description']}</textarea>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="cell first"><label for="category">{$TSUE['TSUE_Language']->phrase['torrent_select_a_category']}</label></div>
+		<div class="cell second">
+			{$categorySelectBox}
+		</div>
+	</div>
+
+	<div class="row" id="dFileDIV">
+		<div class="cell first" id="dFileSelectorText">
+			<label for="dFile">{$TSUE['TSUE_Language']->phrase['dm_select_a_file']}</label> 
+			[<span id="import" class="clickable">{$TSUE['TSUE_Language']->phrase['import']}</span>]
+		</div>
+		<div class="cell second" id="dFileSelector">
+			<input type="file" name="dFile" id="dFile" class="s" accesskey="f" />
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="cell first"><label for="external_link">{$TSUE['TSUE_Language']->phrase['pages_page_external_link']}</label></div>
+		<div class="cell second">
+			<input type="text" name="File[external_link]" id="external_link" class="s" accesskey="e" value="{$File['external_link']}" />
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="cell first"><label for="pFile">{$TSUE['TSUE_Language']->phrase['preview_image']}</label></div>
+		<div class="cell second">
+			<input type="file" name="pFile" id="pFile" class="s" accesskey="p" />
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="cell first"></div>
+		<div class="cell second">
+			<input type="submit" value="{$TSUE['TSUE_Language']->phrase['button_save']}" class="submit" /> 
+			<input type="reset" value="{$TSUE['TSUE_Language']->phrase['button_reset']}" class="submit" />
+		</div>
+	</div>
+
+</div>
+
+</form>

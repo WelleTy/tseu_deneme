@@ -1,0 +1,22 @@
+<tr class="forumList {$class}" id="forumList{$forumid}">
+	<td align="center">
+		<img src="{$TSUE['TSUE_Settings']->settings['global_settings']['website_url']}/styles/{$TSUE['TSUE_Template']->ThemeName}/forums/forum_icons/{$forum['icon']}" alt="" border="0" />
+	</td>
+	<td>
+		<span class="floatright"><a href="{$TSUE['TSUE_Settings']->settings['global_settings']['website_url']}/?p=forums&amp;pid=11&amp;action=rss&amp;fid={$forum['forumid']}" class="rssIcon middle" rel="{$forum['forumid']}"></a></span>
+		
+		<a href="{$TSUE['TSUE_Settings']->settings['global_settings']['website_url']}/?p=forums&amp;pid=11&amp;fid={$forum['forumid']}" rel="{$_rel}" id="{$forum['forumid']}">{$forum['title']}</a>
+		
+		<div class="forum_description">
+			{$forum['description']}
+			
+			<div class="forum_stats">
+				{$TSUE['TSUE_Language']->phrase['forums_threads']}: {$forum['threadcount']} {$TSUE['TSUE_Language']->phrase['forums_replies']}: {$forum['replycount']}
+			</div>
+		</div>
+
+		{$subForums}
+
+	</td>
+	<td>{$last_post_info}</td>
+</tr>

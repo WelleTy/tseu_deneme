@@ -1,0 +1,19 @@
+<div class="widget">
+	<h4>
+		<img src="{$TSUE['TSUE_Settings']->settings['global_settings']['website_url']}/styles/{$TSUE['TSUE_Template']->ThemeName}/forums/mix/{$toggleSrc}.png" alt="" title="" rel="findTorrents" id="toggle" class="middle pointer" /> {$TSUE['TSUE_Language']->phrase['find_torrents']}
+	</h4>
+	
+	<div id="findTorrents" class="{$class}">
+		<p>
+			<a href="{$TSUE['TSUE_Settings']->settings['global_settings']['website_url']}/?p=torrents&action=todays_torrents&pid=10">{$TSUE['TSUE_Language']->phrase['todays_torrents']}</a>
+		</p>
+
+		<p>
+			<a href="{$TSUE['TSUE_Settings']->settings['global_settings']['website_url']}/?p=torrents&action=torrents_of_this_week&pid=10">{$TSUE['TSUE_Language']->phrase['torrents_of_this_week']}</a>
+		</p>
+
+		<p>
+			<a href="{$TSUE['TSUE_Settings']->settings['global_settings']['website_url']}/?p=torrents&action=torrents_of_this_month&pid=10">{$TSUE['TSUE_Language']->phrase['torrents_of_this_month']}</a>
+		</p>
+	</div>
+</div>

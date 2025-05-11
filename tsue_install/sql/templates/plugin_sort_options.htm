@@ -1,0 +1,41 @@
+<form method="post" action="">
+<div class="widget">
+	<h4>
+		<img src="{$TSUE['TSUE_Settings']->settings['global_settings']['website_url']}/styles/{$TSUE['TSUE_Template']->ThemeName}/forums/mix/{$toggleSrc}.png" alt="" title="" rel="displayOptions" id="toggle" class="middle pointer" /> {$TSUE['TSUE_Language']->phrase['torrents_display_options']}
+	</h4>
+	<div id="displayOptions" class="{$class}">
+		<p>
+			<table cellpadding="3" cellspacing="0">
+				<tr>
+					<td>{$TSUE['TSUE_Language']->phrase['torrents_sort_by']}:</td>
+					<td>
+						<select name="sortOptions[sortBy]" id="cat_content_right_column">
+							<option value="added"{$SelectedSortBy['added']}>{$TSUE['TSUE_Language']->phrase['torrents_sort_by_added']}</option>
+							<option value="seeders"{$SelectedSortBy['seeders']}>{$TSUE['TSUE_Language']->phrase['torrents_seeders']}</option>
+							<option value="leechers"{$SelectedSortBy['leechers']}>{$TSUE['TSUE_Language']->phrase['torrents_leechers']}</option>
+							<option value="size"{$SelectedSortBy['size']}>{$TSUE['TSUE_Language']->phrase['torrents_size']}</option>
+							<option value="times_completed"{$SelectedSortBy['times_completed']}>{$TSUE['TSUE_Language']->phrase['torrents_times_completed']}</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>{$TSUE['TSUE_Language']->phrase['torrents_sort_order']}:</td>
+					<td>
+						<select name="sortOptions[sortOrder]" id="cat_content_right_column">
+							<option value="desc"{$SelectedOrderBy['desc']}>{$TSUE['TSUE_Language']->phrase['torrents_sort_order_desc']}</option>
+							<option value="asc"{$SelectedOrderBy['asc']}>{$TSUE['TSUE_Language']->phrase['torrents_sort_order_asc']}</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>
+						<input type="submit" value="{$TSUE['TSUE_Language']->phrase['button_apply']}" class="submit" />
+						<input type="reset" value="{$TSUE['TSUE_Language']->phrase['button_reset']}" class="submit" />
+					</td>
+				</tr>
+			</table>
+		</p>
+	</div>
+</div>
+</form>

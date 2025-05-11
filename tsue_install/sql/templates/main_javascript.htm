@@ -1,0 +1,68 @@
+var TSUEPhrases = 
+{
+	months: "{$TSUE['TSUE_Language']->phrase['dateinput_months']}",
+	shortMonths: "{$TSUE['TSUE_Language']->phrase['dateinput_shortMonths']}",
+	days: "{$TSUE['TSUE_Language']->phrase['dateinput_days']}",
+	shortDays: "{$TSUE['TSUE_Language']->phrase['dateinput_shortDays']}",
+
+	relative_a_moment_ago: "{$TSUE['TSUE_Language']->phrase['relative_a_moment_ago']}",
+	relative_one_minute_ago: "{$TSUE['TSUE_Language']->phrase['relative_one_minute_ago']}",
+	relative_x_minutes_ago: "{$TSUE['TSUE_Language']->phrase['relative_x_minutes_ago']}",
+	relative_one_hour_ago: "{$TSUE['TSUE_Language']->phrase['relative_one_hour_ago']}",
+	relative_x_hours_ago: "{$TSUE['TSUE_Language']->phrase['relative_x_hours_ago']}",
+	relative_one_day_ago: "{$TSUE['TSUE_Language']->phrase['relative_one_day_ago']}",
+	relative_x_days_ago: "{$TSUE['TSUE_Language']->phrase['relative_x_days_ago']}",
+
+	button_save: "{$TSUE['TSUE_Language']->phrase['button_save']}",
+	button_update: "{$TSUE['TSUE_Language']->phrase['button_update']}",
+	button_cancel: "{$TSUE['TSUE_Language']->phrase['button_cancel']}",
+	button_okay: "{$TSUE['TSUE_Language']->phrase['button_okay']}",
+	button_preview: "{$TSUE['TSUE_Language']->phrase['button_preview']}",
+
+	message_saved: "{$TSUE['TSUE_Language']->phrase['message_saved']}",
+	message_posted: "{$TSUE['TSUE_Language']->phrase['message_posted']}",
+	message_deleted: "{$TSUE['TSUE_Language']->phrase['message_deleted']}",
+	message_required_fields_error: "{$TSUE['TSUE_Language']->phrase['message_required_fields_error']}",
+
+	website_active_admin_alert: "{$TSUE['TSUE_Language']->phrase['website_active_admin_alert']}",
+	ajax_error: "{$TSUE['TSUE_Language']->phrase['ajax_error']}",
+	confirmation_required: "{$TSUE['TSUE_Language']->phrase['confirmation_required']}",
+	confirm_delete_message: "{$TSUE['TSUE_Language']->phrase['confirm_delete_message']}",
+	confirm_delete_message_global: "{$TSUE['TSUE_Language']->phrase['confirm_delete_message_global']}",
+	login_required: "{$TSUE['TSUE_Language']->phrase['login_required']}",
+	an_error_hash_occurded: "{$TSUE['TSUE_Language']->phrase['an_error_hash_occurded']}",
+	loading: "{$TSUE['TSUE_Language']->phrase['loading']}",
+
+	shoutbox_inacitivityWarning: "{$TSUE['TSUE_Language']->phrase['shoutbox_inacitivityWarning']}",
+	you_have_new_alerts: "{$TSUE['TSUE_Language']->phrase['you_have_new_alerts']}",
+
+	javascript_resized: "{$TSUE['TSUE_Language']->phrase['javascript_resized']}",
+	javascript_current: "{$TSUE['TSUE_Language']->phrase['javascript_current']}"
+	{$JSPhrases}
+};
+
+var TSUESettings = 
+{
+	charset: "{$TSUE['TSUE_Language']->charset}",
+	memberid: "{$TSUE['TSUE_Member']->info['memberid']}",
+	membername: "{$TSUE['TSUE_Member']->info['membername']}",
+	memberTimezone: {$TSUE['TSUE_Member']->info['timezone']},
+	memberDST: {$TSUE['TSUE_Member']->info['dst']},
+	stKey: "{$TSUE['TSUE_Member']->info['csrf_token_page']}",
+	website_title: "{$TSUE['TSUE_Settings']->settings['global_settings']['website_title']}",
+	website_url: "{$TSUE['TSUE_Settings']->settings['global_settings']['website_url']}",
+	theme_dir: "{$TSUE['TSUE_Settings']->settings['global_settings']['website_url']}/styles/{$TSUE['TSUE_Template']->ThemeName}/",
+	website_active: "{$TSUE['TSUE_Settings']->settings['global_settings']['website_active']}",
+	website_resize_images_max_width: "{$TSUE['TSUE_Settings']->settings['global_settings']['website_resize_images_max_width']}",
+	website_resize_images_max_height: "{$TSUE['TSUE_Settings']->settings['global_settings']['website_resize_images_max_height']}",
+	ajaxHolderID: 'ajaxloader',
+	ajaxLoaderImage: '<img src="{$TSUE['TSUE_Settings']->settings['global_settings']['website_url']}/styles/{$TSUE['TSUE_Template']->ThemeName}/ajax/fb_ajax-loader.gif" class="ajaxLoaderImage">',
+	security_enable_captcha: "{$TSUE['TSUE_Settings']->settings['global_settings']['security_enable_captcha']}",
+
+	shoutbox_enabled: {$TSUE['TSUE_Member']->info['cpOptions']['shoutbox_enabled']},
+	irtm_enabled: {$TSUE['TSUE_Member']->info['cpOptions']['irtm_enabled']},
+	alerts_enabled: {$TSUE['TSUE_Member']->info['cpOptions']['alerts_enabled']},
+
+	pageid: {$PAGEID},
+	pagefile: '{$PAGEFILE}'
+};

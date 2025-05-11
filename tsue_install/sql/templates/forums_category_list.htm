@@ -1,0 +1,16 @@
+<table class="forumTable">
+	<tr>
+		<td colspan="4" class="forumTableHeader">
+			<span class="floatright">
+				<img src="{$TSUE['TSUE_Settings']->settings['global_settings']['website_url']}/styles/{$TSUE['TSUE_Template']->ThemeName}/forums/mix/{$toggleSrc}.png" alt="" title="" rel="forumList{$forum['forumid']}" id="toggle" class="middle pointer" />
+			</span>
+			<a href="{$TSUE['TSUE_Settings']->settings['global_settings']['website_url']}/?p=forums&amp;pid={$PAGEID}&amp;fid={$forum['forumid']}" title="{$forum['description']}">{$forum['title']}</a>
+		</td>
+	</tr>
+	<tr class="forumTableSubHeader">
+		<td class="f_icon"> </td>
+		<td class="f_title">{$TSUE['TSUE_Language']->phrase['forums_forum']}</td>
+		<td class="f_last">{$TSUE['TSUE_Language']->phrase['forums_last_post']}</td>
+	</tr>
+	{$subForums}
+</table>

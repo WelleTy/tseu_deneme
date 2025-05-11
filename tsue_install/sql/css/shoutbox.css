@@ -1,0 +1,138 @@
+div.shoutbox
+{
+	max-height: 200px;
+	overflow: auto;
+	overflow-y: auto;
+	overflow-x: hidden;
+	background:#F7F7F7;
+	position: relative;
+}
+
+table.shoutbox
+{
+	width: 99.8%;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	table-layout: fixed;
+	font-size: 11px;
+}
+
+table.shoutbox tr td
+{
+	word-wrap: break-word;
+	vertical-align: top;
+	padding: 2px;
+	position: relative;
+}
+
+table.shoutbox tr td.sMemberDetails
+{
+	width: 25%;
+	text-align: right;
+}
+table.shoutbox tr td.sMemberDetails img
+{
+	width: 16px;
+	height: 16px;
+	vertical-align: middle;
+}
+
+table.shoutbox tr td.sMemberShout
+{
+	width: 68%;
+	text-align: left;
+}
+table.shoutbox tr td.sMemberShout img
+{
+	max-width: 60%;
+	border: 0;
+}
+table.shoutbox tr td #sMessageRow
+{
+	position: relative;
+	width: 100%;
+}
+table.shoutbox tr td .sButtons
+{
+	display: none;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+table.shoutbox tr td #smessage
+{
+	margin-right: 15px;
+}
+
+#tinymceShoutbox
+{
+	width: 99%;
+	height: 15px;
+	border: 1px solid #ccc;
+	margin-top: 5px;
+	color: #ccc;
+	padding: 3px;
+}
+
+.shoutboxButtons
+{
+	margin: 2px 0 10px 0;
+	display: none;
+}
+
+#shoutboxUpdating
+{
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	display: none;
+	float: right;
+	font-size: 10px;
+	font-style: italic;
+}
+
+#imback
+{
+	cursor: pointer;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+/* Announcements in Shoutbox */
+.shoutboxAnnouncementImg
+{
+	width: 41px;
+	height: 60px;
+	float: left;
+	margin-right: 5px;
+	vertical-align: top;
+	border: 0;
+}
+
+.shoutboxAnnouncementTitle
+{
+	font-weight: bold;
+}
+
+.shoutboxAnnouncementDesc
+{
+	font-size: 11px;
+}
+
+.shoutboxChannels
+{
+	float: right;
+	font-size: 11px;
+}
+.shoutboxChannels select
+{
+	background: #fff;
+	font-size: 10px;
+	width: 150px;
+	color: #333;
+	margin: 0;
+	padding: 2px;
+	display: inline;
+	border: 1px solid #ccc;
+}

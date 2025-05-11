@@ -1,0 +1,13 @@
+<div class="widget">
+	<h4>
+		<span class="floatright">
+			<img src="{$TSUE['TSUE_Settings']->settings['global_settings']['website_url']}/styles/{$TSUE['TSUE_Template']->ThemeName}/buttons/refresh.png" alt="{$TSUE['TSUE_Language']->phrase['button_refresh']}" title="{$TSUE['TSUE_Language']->phrase['button_refresh']}" rel="refreshlast24OnlineMembers" class="clickable middle" />
+		</span>
+		<img src="{$TSUE['TSUE_Settings']->settings['global_settings']['website_url']}/styles/{$TSUE['TSUE_Template']->ThemeName}/forums/mix/{$toggleSrc}.png" alt="" title="" rel="last24ActiveMembers" id="toggle" class="middle pointer" /> <a href="{$TSUE['TSUE_Settings']->settings['global_settings']['website_url']}/?p=online&amp;pid=17&amp;last24=1">{$TSUE['TSUE_Language']->phrase['last24_members']}</a>
+	</h4>
+	
+	<div id="last24ActiveMembers" class="{$class}">
+		<p id="last24onlineMembersList">{$OnlineMembersCount}<br />{$ShowMemberNames}</p>
+		<p>{$buildMembergroupsStyles}</p>
+	</div>
+</div>

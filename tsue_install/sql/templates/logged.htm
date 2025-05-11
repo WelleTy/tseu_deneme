@@ -1,0 +1,19 @@
+<div class="widget">
+	<h4>
+		<img src="{$TSUE['TSUE_Settings']->settings['global_settings']['website_url']}/styles/{$TSUE['TSUE_Template']->ThemeName}/buttons/refresh.png" alt="{$TSUE['TSUE_Language']->phrase['button_refresh']}" title="{$TSUE['TSUE_Language']->phrase['button_refresh']}" rel="refreshMemberStats" class="clickable middle floatright" />
+		<img src="{$TSUE['TSUE_Settings']->settings['global_settings']['website_url']}/styles/{$TSUE['TSUE_Template']->ThemeName}/forums/mix/{$toggleSrc}.png" alt="" title="" rel="logged" id="toggle" class="middle pointer" />  {$TSUE['TSUE_Language']->phrase['logged_welcome_back']}
+	</h4>
+
+	<div  id="logged" class="{$class}">
+		<p>
+			<div class="floatright">
+				{$clickable_member_avatar}
+				<br />
+				[<span id="history_link" class="clickable">{$TSUE['TSUE_Language']->phrase['history_link']}</span>]
+				[<a href="{$TSUE['TSUE_Settings']->settings['global_settings']['website_url']}/?p=logout&amp;logout=1&amp;hash={$TSUE['TSUE_Member']->info['csrf_token_page']}" id="logout">{$TSUE['TSUE_Language']->phrase['logged_logout']}</a>]
+			</div>
+			<div class="floatleft">{$ul_dl_stats}</div>
+			<div class="clear"></div>
+		</p>
+	</div>
+</div>
